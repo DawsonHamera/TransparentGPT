@@ -96,22 +96,22 @@ export default function Home() {
     { label: string; dotClass: string; badgeClass: string }
   > = {
     checking: {
-      label: "Worker: checking",
+      label: "AI Model: checking",
       dotClass: "bg-amber-400",
       badgeClass: "border-amber-500/30 text-amber-500 bg-amber-500/10",
     },
     online: {
-      label: "Worker: online",
+      label: "AI Model: online",
       dotClass: "bg-emerald-400",
       badgeClass: "border-emerald-500/30 text-emerald-500 bg-emerald-500/10",
     },
     offline: {
-      label: "Worker: offline",
+      label: "AI Model: offline",
       dotClass: "bg-red-400",
       badgeClass: "border-red-500/30 text-red-500 bg-red-500/10",
     },
     "not-configured": {
-      label: "Worker: not configured",
+      label: "AI Model: not configured",
       dotClass: "bg-muted-foreground",
       badgeClass:
         "border-muted-foreground/30 text-muted-foreground bg-muted-foreground/10",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Loader2, RotateCcw } from "lucide-react";
 import { Message } from "@/lib/chat-data";
 import { getResponseFromWorker } from "@/lib/worker-api";
@@ -209,7 +209,7 @@ export function ChatInterface({
     startFlowAnimation(response, promptTokens);
   };
 
-  const handleResponseAnimationComplete = () => {
+  const handleResponseAnimationComplete = useCallback(() => {
     // Add the assistant message to the messages array
     if (pendingResponse) {
       const assistantMessage: Message = { role: "assistant", content: pendingResponse };
@@ -221,7 +221,7 @@ export function ChatInterface({
       setCurrentStageIndex(-1);
       onFlowStageChange?.("idle");
     }
-  };
+  }, [messages, onFlowStageChange, onMessagesChange, pendingResponse]);
 
   const handleNewConversation = () => {
     // Reset to just the system prompt (which is already in messages[0])
