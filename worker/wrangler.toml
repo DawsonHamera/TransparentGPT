@@ -1,0 +1,7 @@
+name = "transparentgpt_demo_interface"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "RATE_KV"
+id = "8f142b3256144688a61b0f0f11391d48"
