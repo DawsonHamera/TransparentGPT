@@ -155,21 +155,6 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-1">
             <Button
-              variant="ghost"
-              size="sm"
-              asChild
-              className="text-muted-foreground hover:text-foreground hidden sm:flex h-7 text-xs"
-            >
-              <a
-                href="https://platform.openai.com/docs/api-reference/chat"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="h-3 w-3 mr-1" />
-                API Docs
-              </a>
-            </Button>
-            <Button
               variant="outline"
               size="icon"
               className="lg:hidden h-7 w-7"
