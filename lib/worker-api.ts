@@ -9,10 +9,10 @@ export interface WorkerResponseResult {
   source: "worker" | "scripted";
 }
 
-const WORKER_URL = process.env.NEXT_PUBLIC_WORKER_URL?.trim();
+const WORKER_URL = "https://transparentgpt_demo_interface.dawsonhamera-4c2.workers.dev";
 
 if (!WORKER_URL && process.env.NODE_ENV !== "production") {
-  console.warn("NEXT_PUBLIC_WORKER_URL is not set. Falling back to scripted demo responses.");
+  console.warn("WORKER_URL is not set. Falling back to scripted demo responses.");
 }
 
 export type WorkerAccessibilityStatus =
