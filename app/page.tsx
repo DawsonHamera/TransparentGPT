@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X, Github, Zap } from "lucide-react";
+import { Menu, X, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SystemPromptPanel } from "@/components/system-prompt-panel";
 import { ChatInterface } from "@/components/chat-interface";
